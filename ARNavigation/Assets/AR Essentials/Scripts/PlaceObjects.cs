@@ -100,6 +100,11 @@ public class PlaceObjects : MonoBehaviour
     private void SpawnPrefab(Pose hitPose)
     {
         spawnedObject = Instantiate(PlaceablePrefab, hitPose.position + new Vector3(0, 0f, 0), Quaternion.identity);
+        var rot = spawnedObject.transform.rotation;
+        rot.eulerAngles = new Vector3(spawnedObject.transform.rotation.eulerAngles.x, 
+                                        Camera.main.transform.rotation.eulerAngles.y,
+                                        spawnedObject.transform.rotation.z);
+        spawnedObject.transform.rotation = rot;
         placePrefabList.Add(spawnedObject);
         placedPrefabCount++;
     }

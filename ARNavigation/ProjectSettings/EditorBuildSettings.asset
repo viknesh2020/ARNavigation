@@ -15,5 +15,6 @@ EditorBuildSettings:
     path: Assets/AR Essentials/Scenes/ARScene_WalkingExperience.unity
     guid: 02f189297a42f4fcf81fdd65af2dbaf6
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 8515bc5f86585ea43a18099035471190, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 7bc596922018341acba3c77467ce807b, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 9ed3114c5aaee4994a7c7609d686aa55, type: 2}
