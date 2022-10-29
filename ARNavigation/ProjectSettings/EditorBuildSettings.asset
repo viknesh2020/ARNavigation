@@ -4,5 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/AR Essentials/Scenes/StartScene.unity
+    guid: 4f4d149068b1543f1bd2ba1b08c1e3eb
+  - enabled: 1
+    path: Assets/AR Essentials/Scenes/ARScene_ImageTracking.unity
+    guid: 1eedf3d9675ff48e09b6577fc288160c
+  - enabled: 1
+    path: Assets/AR Essentials/Scenes/ARScene_WalkingExperience.unity
+    guid: 02f189297a42f4fcf81fdd65af2dbaf6
+  m_configObjects:
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 7bc596922018341acba3c77467ce807b, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 9ed3114c5aaee4994a7c7609d686aa55, type: 2}
