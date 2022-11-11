@@ -6,6 +6,7 @@ public class CoinAnim : MonoBehaviour
 {
     [SerializeField] private float rotSpeed;
     [SerializeField] private GameObject particleEffect;
+    [SerializeField] private AudioSource touchAudio;
 
     void Update()
     {
@@ -20,7 +21,8 @@ public class CoinAnim : MonoBehaviour
     public void OnCoinSelected()
     {
         ARGameManager.Instance.UpdateScore();
-        particleEffect.SetActive(true);        
+        particleEffect.SetActive(true);
+        if(!touchAudio.isPlaying) touchAudio.Play();
         Destroy(this.gameObject);
     }
 }

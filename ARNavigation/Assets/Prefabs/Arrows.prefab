@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotSpeed: 50
   particleEffect: {fileID: 4464468566588372568}
+  touchAudio: {fileID: 129721702644828968}
 --- !u!65 &2457786922891569662
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10016,6 +10017,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotSpeed: 50
   particleEffect: {fileID: 3814858961384300897}
+  touchAudio: {fileID: 129721702644828968}
 --- !u!65 &1733108864369385636
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10223,6 +10225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotSpeed: 50
   particleEffect: {fileID: 5689867969393559425}
+  touchAudio: {fileID: 129721702644828968}
 --- !u!65 &4199734327085075417
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10358,6 +10361,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1286968220689586069}
+  - component: {fileID: 129721702644828968}
   m_Layer: 0
   m_Name: Arrows
   m_TagString: Untagged
@@ -10391,6 +10395,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &129721702644828968
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286968220689586068}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3859bccb039e0453da1bcde5e2e1a46c, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1515707010109415508
 GameObject:
   m_ObjectHideFlags: 0
@@ -34992,7 +35092,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2919106351582929301}
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -0.0041713, y: -0.65634, z: 9.67}
+  m_LocalPosition: {x: -0.0041713, y: 0, z: 9.67}
   m_LocalScale: {x: 2.9863, y: 2.9863, z: 2.9863}
   m_Children:
   - {fileID: 8607996077894314133}
@@ -40003,6 +40103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotSpeed: 50
   particleEffect: {fileID: 1818455378318480584}
+  touchAudio: {fileID: 129721702644828968}
 --- !u!65 &3717163366857151316
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54811,6 +54912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotSpeed: 50
   particleEffect: {fileID: 7798754503096776101}
+  touchAudio: {fileID: 129721702644828968}
 --- !u!65 &8594159791165899711
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59809,6 +59911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotSpeed: 50
   particleEffect: {fileID: 2635996745248448931}
+  touchAudio: {fileID: 129721702644828968}
 --- !u!65 &6869282647026931476
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64839,6 +64942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotSpeed: 50
   particleEffect: {fileID: 3118903474001154617}
+  touchAudio: {fileID: 129721702644828968}
 --- !u!65 &5265368763066987603
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -84636,6 +84740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotSpeed: 50
   particleEffect: {fileID: 7971399594469903580}
+  touchAudio: {fileID: 129721702644828968}
 --- !u!65 &3926005809559190473
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -89634,6 +89739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotSpeed: 50
   particleEffect: {fileID: 201247853512847377}
+  touchAudio: {fileID: 129721702644828968}
 --- !u!65 &6505789387553000679
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -94903,6 +95009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotSpeed: 50
   particleEffect: {fileID: 202579828705700926}
+  touchAudio: {fileID: 129721702644828968}
 --- !u!65 &3278762938087058725
 BoxCollider:
   m_ObjectHideFlags: 0

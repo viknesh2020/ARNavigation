@@ -15,6 +15,10 @@ public class ARGameManager : MonoBehaviourSingleton<ARGameManager>
     [SerializeField] private TMP_Text scoreText;
     [SerializeField] private float countDownTimer;
     [SerializeField] private TMP_Text timer;
+    [SerializeField] private GameObject endPopup;
+    [SerializeField] private TMP_Text greetText;
+    [SerializeField] private AudioSource bgAudio;
+    [SerializeField] private GameObject closeButton;
 
     private SurfaceDetector sd;
     private PlaceObjects po;
@@ -24,6 +28,7 @@ public class ARGameManager : MonoBehaviourSingleton<ARGameManager>
     private void Awake()
     {
         scanAnim.SetActive(false);
+        endPopup.SetActive(false);
         scoreText.enabled = false;
         timer.enabled = false;
         instructionPanel.SetActive(false);
@@ -45,7 +50,7 @@ public class ARGameManager : MonoBehaviourSingleton<ARGameManager>
         instructionPanel.SetActive(true);
         yield return new WaitUntil(() => instructionClosed);
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         infoText.text = "Tap to place AR";
         if (!tapAnim.activeSelf) tapAnim.SetActive(true);
 
@@ -55,6 +60,7 @@ public class ARGameManager : MonoBehaviourSingleton<ARGameManager>
 
         yield return new WaitForSeconds(2f);
         infoText.text = "";
+        bgAudio.Play();
         scoreText.enabled = true;
         score = 0;
         scoreText.text = "SCORE: " + score.ToString();
@@ -64,12 +70,16 @@ public class ARGameManager : MonoBehaviourSingleton<ARGameManager>
 
         if(!timerOn)
         {
-          Debug.Log("Game Over");
+            endPopup.SetActive(true);
+            greetText.text = "Better luck next time !";
+            if (closeButton.activeSelf) closeButton.SetActive(false);
         } else if(score == 50)
         {
-          Debug.Log("You Won !");
-        }
-   
+            endPopup.SetActive(true);
+            greetText.text = "Congratulations ! You WON !";
+            timerOn = false;
+            if (closeButton.activeSelf) closeButton.SetActive(false);
+        }  
 
     }
 
